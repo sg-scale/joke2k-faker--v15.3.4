@@ -26,7 +26,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip-flake8
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v7
       with:
         python-version: '3.x'
     - name: Install dependencies
@@ -51,7 +51,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip-checkmanifest
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v7
       with:
         python-version: '3.x'
     - name: Install dependencies
@@ -75,7 +75,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip-isort
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v7
       with:
         python-version: '3.x'
     - name: Install dependencies
@@ -100,7 +100,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip-black
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v7
       with:
         python-version: '3.x'
     - name: Install dependencies
@@ -124,7 +124,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip-pep8
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v7
       with:
         python-version: '3.x'
     - name: Install dependencies
@@ -152,7 +152,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip-typing
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v7
       with:
         python-version: ${{ matrix.python }}
     - name: Install dependencies
@@ -182,7 +182,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-test_ubuntu
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v7
         with:
           python-version: ${{ matrix.python }}
       - name: Install Tox and any other packages
@@ -224,7 +224,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-test_windows
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v7
         with:
           python-version: ${{ matrix.python }}
       - name: Install Tox and any other packages
@@ -255,7 +255,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip-test_alpine
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v7
       with:
         python-version: '3.x'
     - name: Install dependencies
@@ -282,7 +282,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip-test_32bit
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v7
       with:
         python-version: '3.x'
     - name: Install dependencies
