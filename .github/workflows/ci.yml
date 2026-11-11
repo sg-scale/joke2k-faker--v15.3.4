@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v7
     - name: Setup pip cache
       uses: actions/cache@v3
       id: pipcache
@@ -41,7 +41,7 @@ jobs:
   checkmanifest:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v7
     - name: Setup pip cache
       uses: actions/cache@v3
       id: pipcache
@@ -65,7 +65,7 @@ jobs:
   isort:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v7
     - name: Setup pip cache
       uses: actions/cache@v3
       id: pipcache
@@ -90,7 +90,7 @@ jobs:
   black:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v7
     - name: Setup pip cache
       uses: actions/cache@v3
       id: pipcache
@@ -114,7 +114,7 @@ jobs:
   doc8:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v7
     - name: Setup pip cache
       uses: actions/cache@v3
       id: pipcache
@@ -142,7 +142,7 @@ jobs:
         python: ["3.7", "3.8", "3.9", "3.10"]
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v7
     - name: Setup pip cache
       uses: actions/cache@v3
       id: pipcache
@@ -172,7 +172,7 @@ jobs:
         python: ["3.7", "3.8", "3.9", "3.10", "pypy-3.9"]
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
       - name: Setup pip cache
         uses: actions/cache@v3
         id: pipcache
@@ -214,7 +214,7 @@ jobs:
         arch: ["x86", "x64"]
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
       - name: Setup pip cache
         uses: actions/cache@v3
         id: pipcache
@@ -245,7 +245,7 @@ jobs:
     needs: [flake8, isort, black, doc8, checkmanifest, typing]
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v7
     - name: Setup pip cache
       uses: actions/cache@v3
       id: pipcache
@@ -272,7 +272,7 @@ jobs:
     needs: [flake8, isort, black, doc8, checkmanifest, typing]
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v7
     - name: Setup pip cache
       uses: actions/cache@v3
       id: pipcache
